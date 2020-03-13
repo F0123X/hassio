@@ -1,0 +1,4 @@
+platform: generic
+name: Porch
+still_image_url: !secret camera_porch
+stream_source: !secret camera_stream_porch

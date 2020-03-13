@@ -1,0 +1,9 @@
+'1583390822638':
+  alias: Reboot Home Assistant
+  sequence:
+  - data:
+      message: Rebooting Home Assistant
+      title: Alert
+    service: notify.mobile_app_pixel_3_xl
+  - data: {}
+    service: homeassistant.restart

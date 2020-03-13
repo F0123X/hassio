@@ -1,0 +1,21 @@
+---
+language: python
+# Existing Python versions
+python:
+  - "3.7.0"
+
+before_install:
+  - mv travis_secrets.yaml secrets.yaml
+  - sudo apt-get install -y libudev-dev
+  - touch ./home-assistant_v2.db
+  - touch ./home-assistant.log
+  - touch ./OZW_Log.txt
+  - rm -f ./components/packages/stream.yaml
+
+install:
+  - pip3 install --pre homeassistant
+  - pip3 install colorlog
+  - hass --version
+
+script:
+  - hass -c . --script check_config --info all

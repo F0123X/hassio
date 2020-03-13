@@ -1,0 +1,48 @@
+# Python Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary db files
+*.db-shm
+*.db-wal
+
+# Tokens
+.google.token
+.xbox-token.json
+
+# UUID
+.uuid
+
+# Z-Wave Files
+options.xml
+OZW_Log.txt
+pyozw.sqlite
+zw*.xml
+
+# Other private files/patterns
+secrets.yaml
+ip_bans.yaml
+
+*.pickle
+*.conf
+*.log
+*.db
+*.backup
+*.bak
+
+# Integrations and Plugins
+www/
+
+# Folders
+.storage/
+deps/
+.ssh/
+/tts/
+.cloud/
+
+# Remove Node Red except flows
+node-red/
+custom_components/
+esphome/
+.vscode/

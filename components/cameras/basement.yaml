@@ -1,0 +1,4 @@
+platform: generic
+name: Basement
+still_image_url: !secret camera_basement
+stream_source: !secret camera_stream_basement

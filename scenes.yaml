@@ -1,0 +1,87 @@
+- id: '1583980647453'
+  name: Billiards
+  entities:
+    light.billiards_table_light_1:
+      brightness: 255
+      color_temp: 127
+      current_power_w: '10.8'
+      daily_energy_kwh: '0.109'
+      friendly_name: Billiards Table Light 1
+      hs_color:
+      - 0
+      - 0
+      max_mireds: 400
+      min_mireds: 111
+      monthly_energy_kwh: '0.591'
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      state: 'on'
+      supported_features: 19
+      xy_color:
+      - 0.323
+      - 0.329
+    light.billiards_table_light_2:
+      brightness: 255
+      current_power_w: '10.8'
+      daily_energy_kwh: '0.076'
+      friendly_name: Billiards Table Light 2
+      hs_color:
+      - 120
+      - 75
+      max_mireds: 400
+      min_mireds: 111
+      monthly_energy_kwh: '0.591'
+      rgb_color:
+      - 63
+      - 255
+      - 63
+      state: 'on'
+      supported_features: 19
+      xy_color:
+      - 0.195
+      - 0.684
+    light.billiards_table_light_3:
+      brightness: 255
+      color_temp: 130
+      current_power_w: '10.8'
+      daily_energy_kwh: '0.109'
+      friendly_name: Billiards Table Light 3
+      hs_color:
+      - 0
+      - 0
+      max_mireds: 400
+      min_mireds: 111
+      monthly_energy_kwh: '0.591'
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      state: 'on'
+      supported_features: 19
+      xy_color:
+      - 0.323
+      - 0.329
+    media_player.dining_room:
+      entity_picture: /api/media_player_proxy/media_player.dining_room?token=716b64d9fb401d03bf31ffbc78206a4c16eec66bb33c5ea8944bc5f46f8b11d8&cache=b81464a363f2d369
+      friendly_name: Dining Room
+      is_volume_muted: false
+      media_album_name: Detroit 3 AM (Radio Edit)
+      media_artist: David Guetta
+      media_content_id: x-rincon:RINCON_7828CA17131201400
+      media_content_type: music
+      media_duration: 188
+      media_position: 93
+      media_position_updated_at: '2020-03-12T02:24:16.232281+00:00'
+      media_title: Detroit 3 AM - Radio Edit
+      shuffle: false
+      sonos_group:
+      - media_player.family_room
+      - media_player.dining_room
+      source_list:
+      - Here With Me
+      - Thumbs up
+      state: paused
+      supported_features: 64063
+      volume_level: 0.16

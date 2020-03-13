@@ -1,0 +1,6 @@
+platform: samsungtv_tizen
+host: !secret samsung_tv_host
+mac: !secret samsung_tv_mac
+port: 8002
+api_key: !secret smartthings_token
+device_id: !secret samsung_tv_device_id

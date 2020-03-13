@@ -1,0 +1,36 @@
+- id: '1583381510617'
+  alias: Perform Daily Backup
+  description: ''
+  trigger:
+  - at: 02:30:00
+    platform: time
+  condition:
+  - condition: time
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+  action:
+  - data_template:
+      keep_days: 3
+      name: 'DailyBackup: {{ now().strftime(''%A, %B %-d, %Y'') }}'
+    service: auto_backup.snapshot_full
+- id: '1583387288089'
+  alias: Set Theme
+  description: ''
+  trigger:
+  - event: start
+    platform: homeassistant
+  condition: []
+  action:
+  - data:
+      name: Green Dark Mode
+    service: frontend.set_theme
+  - data:
+      message: Alert
+      title: Home Assistant starting up...
+    service: notify.mobile_app_pixel_3_xl

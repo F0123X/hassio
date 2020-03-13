@@ -1,0 +1,4 @@
+platform: generic
+name: Dining Room
+still_image_url: !secret camera_dining_room
+stream_source: !secret camera_stream_dining_room

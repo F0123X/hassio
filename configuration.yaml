@@ -1,0 +1,44 @@
+homeassistant:
+  name: Home
+  auth_providers:
+    - type: homeassistant
+    - type: legacy_api_password
+      api_password: !secret http_password
+
+auto_backup: !include components/autobackup.yaml
+automation: !include automations.yaml
+breaking_changes:
+camera: !include_dir_list components/cameras
+config:
+frontend:
+  javascript_version: 'latest'
+  themes: !include_dir_merge_named themes
+google:
+  client_id: !secret google_client_id
+  client_secret: !secret google_client_secret
+group: !include groups.yaml
+hassio:
+history:
+http:
+  base_url: !secret base_url
+logbook:
+logger:
+  default: info
+media_player: !include_dir_list components/media_players
+mobile_app:
+nest:
+  client_id: !secret nest_client_id
+  client_secret: !secret nest_client_secret
+recorder:
+  purge_interval: 1
+  purge_keep_days: 1
+remote: !include_dir_list components/remotes
+scene: !include scenes.yaml
+script: !include scripts.yaml
+sensor: !include_dir_list components/sensors
+speedtestdotnet: !include components/speedtestdotnet.yaml
+stream:
+system_health:
+tts:
+  - platform: google_translate
+uilogs:

@@ -1,0 +1,4 @@
+platform: generic
+name: Backyard
+still_image_url: !secret camera_backyard
+stream_source: !secret camera_stream_backyard
