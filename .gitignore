@@ -32,8 +32,8 @@ ip_bans.yaml
 *.bak
 
 # Integrations and Plugins
-www/
-
+www/custom-lovelace
+www/*.jpg
 # Folders
 .storage/
 deps/
@@ -43,6 +43,5 @@ deps/
 
 # Remove Node Red except flows
 node-red/
-custom_components/
 esphome/
 .vscode/

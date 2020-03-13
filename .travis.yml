@@ -10,7 +10,7 @@ before_install:
   - touch ./home-assistant_v2.db
   - touch ./home-assistant.log
   - touch ./OZW_Log.txt
-  - rm -f ./components/packages/stream.yaml
+  # - rm -f ./components/packages/stream.yaml
 
 install:
   - pip3 install --pre homeassistant
