@@ -23,7 +23,7 @@ zw*.xml
 # Other private files/patterns
 secrets.yaml
 ip_bans.yaml
-
+.ip_authenticated.yaml
 *.pickle
 *.conf
 *.log
@@ -34,6 +34,8 @@ ip_bans.yaml
 # Integrations and Plugins
 www/custom-lovelace
 www/*.jpg
+
+
 # Folders
 .storage/
 deps/

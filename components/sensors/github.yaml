@@ -1,0 +1,4 @@
+platform: github
+access_token: !secret github_token
+repositories:
+  - path: 'F0123X/hassio'

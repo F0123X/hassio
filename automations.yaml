@@ -20,7 +20,7 @@
       name: 'DailyBackup: {{ now().strftime(''%A, %B %-d, %Y'') }}'
     service: auto_backup.snapshot_full
 - id: '1583387288089'
-  alias: Set Theme
+  alias: On Start
   description: ''
   trigger:
   - event: start
@@ -31,6 +31,18 @@
       name: Green Dark Mode
     service: frontend.set_theme
   - data:
-      message: Alert
-      title: Home Assistant starting up...
+      message: Home Assistant is starting up.
+      title: Alert
+    service: notify.mobile_app_pixel_3_xl
+- id: '1584145738331'
+  alias: On Shutdown
+  description: ''
+  trigger:
+  - event: shutdown
+    platform: homeassistant
+  condition: []
+  action:
+  - data:
+      message: Home Assistant is shutting down
+      title: Alert
     service: notify.mobile_app_pixel_3_xl
