@@ -28,7 +28,7 @@
   condition: []
   action:
   - data:
-      name: Green Dark Mode
+      name: Islanders Theme
     service: frontend.set_theme
   - data:
       message: Home Assistant is starting up.
@@ -44,5 +44,23 @@
   action:
   - data:
       message: Home Assistant is shutting down
+      title: Alert
+    service: notify.mobile_app_pixel_3_xl
+- id: '1584245588575'
+  alias: Unlocked Door During Shower
+  description: ''
+  trigger:
+  - entity_id: lock.front_door_locked
+    for: '10'
+    from: locked
+    platform: state
+    to: unlocked
+  condition:
+  - above: '.75'
+    condition: numeric_state
+    entity_id: sensor.upstairs_bathroom_humidity
+  action:
+  - data:
+      message: Front door has been unlocked.
       title: Alert
     service: notify.mobile_app_pixel_3_xl

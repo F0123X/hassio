@@ -12,7 +12,6 @@ breaking_changes:
 camera: !include_dir_list components/cameras
 config:
 frontend: !include components/frontend.yaml
-google: !include components/google.yaml
 group: !include groups.yaml
 hassio:
 history:
@@ -31,3 +30,9 @@ speedtestdotnet: !include components/speedtestdotnet.yaml
 system_health:
 tts: !include_dir_list components/tts
 uilogs:
+
+
+google:
+  client_id: !secret google_client_id
+  client_secret: !secret google_client_secret
+  track_new_calendar: False
