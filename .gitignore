@@ -47,3 +47,4 @@ deps/
 node-red/
 esphome/
 .vscode/
+google_calendars.yaml
