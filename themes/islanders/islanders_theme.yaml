@@ -4,33 +4,45 @@
 Islanders Theme:
   # Templete Colors
   primary-color: "#00539B"
+  light-primary-color: "#4d94d1"
+
   secondary-color: "#F47D30"
+  light-secondary-color: "#FCB07E"
+
+  primary-background-color: "#1B1B1B"
+  # primary-background-color: "#2C2C2E"
+  secondary-background-color: rgba(55, 55, 55, 0.7)
+
+  primary-text-color: "#FFF"
+
+
+
+
   tertiary-color: "#202124"
-  light-primary-color: "#FFFFFF"
   disabled-color: "#717171"
   inactive-color: "#5F6267"
 
   # Header:
-  app-header-background-color: var(--tertiary-color)
+  app-header-background-color: var(--primary-background-color)
   app-header-text-color: var(--primary-color)
+  
   # Main Interface Colors
-  primary-background-color: var(--tertiary-color)
-  secondary-background-color: var(--tertiary-color)
   divider-color: var(--primary-background-color)
+
   # Text
-  primary-text-color: var(--light-primary-color)
-  secondary-text-color: var(--primary-color)
+  secondary-text-color: var(--secondary-color)
   text-primary-color: var(--light-primary-color)
   disabled-text-color: var(--disabled-color)
+
   # Sidebar Menu
   sidebar-icon-color: var(--primary-color)
-  sidebar-text-color: var(--light-primary-color)
-  sidebar-background-color: var(--tertiary-color)
+  sidebar-text-color: var(--primary-color)
+  sidebar-background-color: var(--primary-background-color)
   sidebar-selected-background-color: var(--primary-color)
   sidebar-selected-icon-color: var(--secondary-color)
   sidebar-selected-text-color: var(--secondary-color)
   # States and Badges
-  state-icon-color: var(--inactive-color)
+  state-icon-color: var(--primary-color)
   state-icon-active-color: var(--secondary-color)
   state-icon-unavailable-color: var(--disabled-color)
   # Sliders
@@ -40,8 +52,8 @@ Islanders Theme:
   paper-slider-active-color: var(--paper-slider-knob-color)
   paper-slider-secondary-color: var(--light-primary-color)
   # Labels
-  label-badge-background-color: var(--inactive-color)
-  label-badge-text-color: var(--light-primary-color)
+  label-badge-background-color: var(--secondary-background-color)
+  label-badge-text-color: var(--primary-color)
   label-badge-red: var(--secondary-color)
   # label-badge-red: "#D06568"
   label-badge-green: var(--secondary-color)
@@ -53,8 +65,8 @@ Islanders Theme:
   # Cards
   ha-card-border-radius: "15px"
   ha-card-box-shadow: 1px 1px 5px 0px rgb(12, 12, 14)
-  paper-card-background-color: var(--tertiary-color)
-  paper-listbox-background-color: var(--tertiary-color)
+  paper-card-background-color: var(--secondary-background-color)
+  paper-listbox-background-color: var(--primary-background-color)
   # Switches
   switch-checked-button-color: var(--primary-color)
   switch-checked-track-color: var(--secondary-color)

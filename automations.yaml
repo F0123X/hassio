@@ -56,7 +56,7 @@
     platform: state
     to: unlocked
   condition:
-  - above: '.75'
+  - above: '75'
     condition: numeric_state
     entity_id: sensor.upstairs_bathroom_humidity
   action:
