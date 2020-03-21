@@ -1,0 +1,3 @@
+host: !secret pi_hole_host
+name: !secret pi_hole_name
+api_key: !secret pi_hole_api_key

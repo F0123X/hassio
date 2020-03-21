@@ -10,8 +10,10 @@ auto_backup: !include components/autobackup.yaml
 automation: !include automations.yaml
 breaking_changes:
 camera: !include_dir_list components/cameras
+cloud:
 config:
 frontend: !include components/frontend.yaml
+google: !include components/google_calendar.yaml 
 group: !include groups.yaml
 hassio:
 history:
@@ -21,6 +23,7 @@ logger: !include components/logger.yaml
 media_player: !include_dir_list components/media_players
 mobile_app:
 nest: !include components/nest.yaml
+pi_hole: !include components/pi_hole.yaml
 recorder: !include components/recorder.yaml
 remote: !include_dir_list components/remotes
 scene: !include scenes.yaml
@@ -30,9 +33,4 @@ speedtestdotnet: !include components/speedtestdotnet.yaml
 system_health:
 tts: !include_dir_list components/tts
 uilogs:
-
-
-google:
-  client_id: !secret google_client_id
-  client_secret: !secret google_client_secret
-  track_new_calendar: False
+var: !include_dir_merge_named components/vars

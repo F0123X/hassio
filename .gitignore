@@ -48,3 +48,5 @@ node-red/
 esphome/
 .vscode/
 google_calendars.yaml
+
+custom_components/samsungtv_tizen/token*.txt

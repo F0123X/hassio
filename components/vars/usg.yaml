@@ -1,0 +1,29 @@
+unifi_gateway_cpu_usage:
+  friendly_name: UniFi Gateway CPU Usage
+  value_template: "{{ state_attr('sensor.unifi_gateway_wan', 'gw_system-stats')['cpu'] }}"
+  icon: mdi:chip
+  unit_of_measurement: '%'
+  tracked_entity_id:
+    - sensor.unifi_gateway_wan
+
+unifi_gateway_memory_usage:
+  friendly_name: UniFi Gateway Memory Usage
+  value_template: "{{ state_attr('sensor.unifi_gateway_wan', 'gw_system-stats')['mem'] }}"
+  icon: mdi:memory
+  unit_of_measurement: '%'
+  tracked_entity_id:
+    - sensor.unifi_gateway_wan
+
+unifi_gateway_external_ip:
+  friendly_name: UniFi Gateway External IP
+  value_template: "{{ state_attr('sensor.unifi_gateway_wan', 'wan_ip') }}"
+  icon: mdi:network-router
+  tracked_entity_id:
+    - sensor.unifi_gateway_wan
+
+unifi_gateway_lan_ip:
+  friendly_name: UniFi Gateway Lan IP
+  value_template: "{{ state_attr('sensor.unifi_gateway_lan', 'lan_ip') }}"
+  icon: mdi:network-router
+  tracked_entity_id:
+    - sensor.unifi_gateway_lan

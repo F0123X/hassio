@@ -1,6 +1,6 @@
 platform: travisci
 api_key: !secret travis_token
-# repository: 'f0123x/hassio'
+repository: 'F0123X/hassio'
 # repository:
 #   - 'hassio'
 # monitored_conditions:
